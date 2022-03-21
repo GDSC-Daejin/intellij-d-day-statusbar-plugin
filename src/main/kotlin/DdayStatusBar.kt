@@ -14,9 +14,7 @@ import kotlin.time.Duration
 
 class DdayStatusBarWidgetPresentation(private val statusBar: StatusBar) : StatusBarWidget.TextPresentation {
 
-    companion object {
-        private val date = Instant.parse("1997-09-14T00:00:00Z")
-    }
+    private val date = Instant.parse("1997-09-14T00:00:00Z")
 
     private fun calculateDuration(): Duration {
         return Clock.System.now() - date
