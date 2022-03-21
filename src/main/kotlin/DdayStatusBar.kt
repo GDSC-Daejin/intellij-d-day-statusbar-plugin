@@ -23,7 +23,7 @@ class DdayStatusBarWidgetPresentation(private val statusBar: StatusBar) : Status
     }
 
     override fun getText(): String {
-        return "D-${calculateDuration().inWholeDays + 1}"
+        return "D-${calculateDuration().inWholeDays + 2}"
     }
 
     override fun getAlignment() = Component.CENTER_ALIGNMENT
