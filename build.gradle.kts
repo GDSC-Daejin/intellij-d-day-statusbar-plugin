@@ -20,7 +20,12 @@ dependencies {
 }
 
 intellij {
-    version.set("2021.3.2")
+    version.set("2021.1")
+}
+
+tasks.patchPluginXml {
+    sinceBuild.set("211.*")
+    untilBuild.set("213.*")
 }
 
 tasks.test {
