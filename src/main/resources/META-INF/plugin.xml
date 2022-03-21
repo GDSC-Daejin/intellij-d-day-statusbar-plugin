@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>app.harry.intellij.ddaystatusbar</id>
+    <name>D-Day Status Bar Widget</name>
+    <vendor email="jungsanmango@gmail.com" url="https://github.com/HarryTylenol">HarryTylenol</vendor>
+
+    <description><![CDATA[
+    D-Day Status Bar Widget<br>
+    <em>This is D-Day Status Bar Widget for IntelliJ</em>
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <statusBarWidgetFactory implementation="DdayStatusBarWidgetFactory" order="after notificationsWidget"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
