@@ -17,7 +17,7 @@ class DdayStatusBarWidgetPresentation(private val statusBar: StatusBar) : Status
     private val date = Instant.parse("1997-09-14T00:00:00Z")
 
     override fun getText(): String {
-        val duration = (Clock.System.now() - date).inWholeDays + 2
+        val duration = (Clock.System.now() - date).inWholeDays + 1
         return when {
             duration == 0L -> "D-day"
             duration > 0L -> "D+$duration"
